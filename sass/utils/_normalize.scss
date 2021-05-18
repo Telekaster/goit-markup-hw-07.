@@ -16,6 +16,15 @@ img {
   display: block;
 }
 
+.link {
+  text-decoration: none;
+  color: inherit;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .list {
   padding: 0;
   margin: 0;
