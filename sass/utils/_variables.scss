@@ -1,0 +1,44 @@
+$brandcolor: #2196f3;
+
+$main-text-color: #757575;
+
+$black-text-color: #212121;
+
+$background-color: #2f303a;
+
+$background-color-white: #ffffff;
+
+$background-color-grey: #f5f4fa;
+
+$nav-border: #ececec;
+
+$portfolio-border: #eeeeee;
+
+$icons-color: #afb1b8;
+
+$gradient: rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4);
+
+$main-font: Roboto, sans-serif;
+
+$brand-font: Raleway;
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $brandcolor;
+  }
+}

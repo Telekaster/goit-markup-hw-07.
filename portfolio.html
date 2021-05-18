@@ -9,7 +9,7 @@
     rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
 
-<link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="./css/main.css">
 </head>
 
 
@@ -18,40 +18,29 @@
     
     <!-- Шапка -->
         <header class="header-portfolio">
-            <div class="container header">
-                <a class="logo link" href="./index.html"> <span class="logo-web">Web </span> Studio </a>
+            <div class="header">
+                <a class="header__logo" href="./index.html"><span class="header__logo--blue">Web</span>Studio</a>
         
-                <nav class="header-nav">
-                    <ul class="list-nav list">
-                        <li class="list-nav-item"> 
-                            <a class="header-links list-nav-item-link link" href="./index.html">Студия
-                            </a> 
-                        </li>
-
-                        <li class="list-nav-item"> 
-                            <a class="active-page-portfolio list-nav-item-link link" href="./portfolio.html"> Портфолио
-                            </a>
-                         </li>
-
-                        <li class="list-nav-item"> 
-                            <a class="header-links list-nav-item-link link" href=""> Контакты
-                            </a> 
-                        </li>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"> <a class="nav__link" href="./index.html">Студия</a> </li>
+                        <li class="list-nav-item"><a class="nav__link nav__link--active-portfolio" href="./portfolio.html"> Портфолио</a></li>
+                        <li class="nav__item"> <a class="nav__link" href="">Контакты</a> </li>
                     </ul>
                 </nav>
         
-                <ul class="list-phone list">
-                    <li class="list-phone-item">
-                        <a class="header-mailtel link" href="mailto:info@devstudio.com">
-                            <svg class="envelope-icon" width=16px height=12px>
+                <ul class="phone">
+                    <li class="phone__item">
+                        <a class="phone__link" href="mailto:info@devstudio.com">
+                            <svg class="phone__icon" width=16px height=12px>
                                 <use href=./images/Sprite.svg#icon-envelope-hover></use>
                             </svg> info@devstudio.com
                         </a>
                     </li>
-        
-                    <li class="list-phone-item">
-                        <a class="header-mailtel link" href="tel:+380961111111">
-                            <svg class="phone-icon" width=10px height=16px>
+                
+                    <li class="phone__item">
+                        <a class="phone__link" href="tel:+380961111111">
+                            <svg class="phone__icon" width=10px height=16px>
                                 <use href=./images/Sprite.svg#icon-phone></use>
                             </svg> +38 096 111 11 11</a>
                     </li>

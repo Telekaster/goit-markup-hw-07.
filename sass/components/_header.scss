@@ -1,0 +1,101 @@
+.header {
+  @extend .container;
+  display: flex;
+  align-items: center;
+}
+
+.header-portfolio {
+  border-bottom: 1px solid #ececec;
+}
+
+.header__logo {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  font-family: $brand-font;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: $black-text-color;
+  @extend .link;
+}
+
+.header__logo--blue {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: $brandcolor;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__list {
+  @extend .list;
+  display: flex;
+  margin-left: 93px;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav__link {
+  @extend .link;
+  display: block;
+  padding: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $black-text-color;
+}
+
+.nav__link--active-main {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $brandcolor;
+}
+
+.nav__link--active-portfolio {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $brandcolor;
+}
+
+.phone {
+  @extend .list;
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.phone__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.phone__link {
+  @extend .link;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $main-text-color;
+}
+
+.phone__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
