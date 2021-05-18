@@ -28,7 +28,7 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list, .nav__list, .phone, .card-list, .work__list, .team__list, .team__social-item, .clients__list, .footer__list, .footer__icons {
+.list, .nav__list, .phone, .card-list, .work__list, .team__list, .team__social-item, .clients__list, .filter__list, .footer__list, .footer__icons {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -215,6 +215,17 @@ textarea {
   color: #2196f3;
 }
 
+.nav__link--active-main::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 63.5px;
+  width: 48px;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+}
+
 .nav__link--active-portfolio {
   position: relative;
   font-weight: 500;
@@ -222,6 +233,17 @@ textarea {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+
+.nav__link--active-portfolio::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 78px;
+  height: 4px;
+  top: 63.5px;
+  background: #2196f3;
+  border-radius: 2px;
 }
 
 .phone {
@@ -552,6 +574,47 @@ textarea {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.filter__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter__button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  background: #f5f4fa;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 38px;
+  border: 0;
+  padding-left: 22px;
+  padding-right: 22px;
+  -webkit-transition-property: color background-color shadow-box;
+  transition-property: color background-color shadow-box;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter__button:hover, .filter__button:focus {
+  color: #ffffff;
+  background-color: #2196f3;
 }
 
 .footer {
