@@ -160,7 +160,7 @@ textarea {
   display: flex;
   padding-top: 24px;
   padding-bottom: 25px;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
@@ -522,8 +522,6 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: calc(100% / 6);
-      flex-wrap: calc(100% / 6);
 }
 
 .clients__item:not(:last-child) {
@@ -604,8 +602,8 @@ textarea {
   border: 0;
   padding-left: 22px;
   padding-right: 22px;
-  -webkit-transition-property: color background-color shadow-box;
-  transition-property: color background-color shadow-box;
+  -webkit-transition-property: color, background-color, shadow-box;
+  transition-property: color, background-color, shadow-box;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -729,7 +727,7 @@ textarea {
   display: block;
   margin-right: 156px;
   padding-bottom: 20px;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
@@ -903,7 +901,6 @@ textarea {
 .modal {
   width: 528px;
   height: 581px;
-  background-color: #ffffff;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1121,7 +1118,6 @@ textarea {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

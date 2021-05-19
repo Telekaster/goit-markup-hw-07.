@@ -45,6 +45,7 @@
 
 .team__social-item {
   @extend .list;
+
   &:not(:last-child) {
     padding-right: 10px;
   }

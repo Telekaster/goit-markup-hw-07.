@@ -1,7 +1,6 @@
 .clients__list {
   @extend .list;
   display: flex;
-  flex-wrap: calc(100% / 6);
 }
 
 .clients__item:not(:last-child) {
